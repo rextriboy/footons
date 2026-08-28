@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 404 - Geração Zero | Fótons Energia Solar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- Configurações Globais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff; 
+            color: #0f172a; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* --- Palco da Animação --- */
+        .animation-stage {
+            position: relative;
+            width: 280px;
+            height: 200px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Iluminação de fundo (Glow) */
+        .glow {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(247, 147, 30, 0.2) 0%, rgba(247, 147, 30, 0) 70%);
+            border-radius: 50%;
+            transition: all 0.5s ease;
+        }
+
+        /* O Sol Solitário */
+        .sun {
+            position: absolute;
+            top: 15%;
+            left: 35%;
+            width: 60px;
+            height: 60px;
+            background-color: #F7931E; 
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(247, 147, 30, 0.3);
+            transition: all 0.5s ease;
+        }
+
+        /* A Nuvem do Bloqueio */
+        .cloud {
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            width: 90px;
+            height: 35px;
+            background-color: #cbd5e1; 
+            border-radius: 20px;
+            animation: floatCloud 4s ease-in-out infinite;
+            transition: all 0.5s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background-color: #cbd5e1;
+            border-radius: 50%;
+        }
+        .cloud::before { width: 40px; height: 40px; top: -20px; left: 15px; }
+        .cloud::after { width: 50px; height: 50px; top: -25px; left: 35px; }
+
+        /* O Painel Solar */
+        .solar-panel {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%) perspective(100px) rotateX(25deg);
+            width: 140px;
+            height: 90px;
+            background-color: #f1f5f9; 
+            border: 4px solid #cbd5e1;
+            border-radius: 6px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 3px;
+            padding: 3px;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        .cell {
+            background-color: #e2e8f0; 
+            border-radius: 2px;
+            transition: all 0.5s ease;
+        }
+
+        /* Indicador Digital de Energia Ociosa */
+        .display-counter {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 12px;
+            border: 2px solid #ef4444; 
+            color: #ef4444;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+            box-shadow: 0 4px 10px rgba(239, 68, 68, 0.1);
+        }
+
+        /* --- Textos e Conteúdo --- */
+        .error-code {
+            font-size: 96px;
+            font-weight: 900;
+            line-height: 1;
+            /* Estado Inicial: Gradiente Vermelho */
+            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            transition: all 0.5s ease; /* Transição suave de cor */
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .subline {
+            font-size: 16px;
+            color: #64748b; 
+            margin-bottom: 35px;
+        }
+
+        /* --- O Botão Gatilho --- */
+        .btn-home {
+            display: inline-block;
+            background-color: #F7931E; 
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 14px 36px;
+            border-radius: 50px;
+            font-size: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.4);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(247, 147, 30, 0.6);
+            background-color: #e07a00;
+        }
+
+        /* --- EFEITO INTERATIVO (HOVER NO BOTÃO) --- */
+        
+        /* NOVO: O número 404 muda para o mesmo verde do painel */
+        body:has(.btn-home:hover) .error-code {
+            background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        body:has(.btn-home:hover) .sun {
+            background-color: #facc15;
+            box-shadow: 0 0 25px #facc15, 0 0 50px rgba(250, 204, 21, 0.5);
+            transform: scale(1.1);
+        }
+
+        body:has(.btn-home:hover) .glow {
+            background: radial-gradient(circle, rgba(234, 179, 8, 0.4) 0%, rgba(234, 179, 8, 0) 70%);
+            width: 200px;
+            height: 200px;
+        }
+
+        body:has(.btn-home:hover) .cloud {
+            transform: translateX(120px); 
+            opacity: 0.1;
+        }
+
+        body:has(.btn-home:hover) .solar-panel {
+            border-color: #22c55e; 
+            background-color: #f0fdf4;
+        }
+
+        body:has(.btn-home:hover) .cell {
+            background-color: #22c55e; 
+            box-shadow: inset 0 0 4px rgba(255,255,255,0.6);
+        }
+
+        body:has(.btn-home:hover) .display-counter {
+            border-color: #22c55e;
+            color: #22c55e; 
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+        }
+
+        body:has(.btn-home:hover) .display-counter::before {
+            content: "100.0 kW";
+        }
+        
+        .display-counter::before {
+            content: "0.0 kW";
+        }
+
+        /* --- Animação da Nuvem --- */
+        @keyframes floatCloud {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        @media (max-width: 480px) {
+            .error-code { font-size: 72px; }
+            .headline { font-size: 20px; }
+            .subline { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Palco Visual Animado -->
+        <div class="animation-stage">
+            <div class="glow"></div>
+            <div class="sun"></div>
+            <div class="cloud"></div>
+            <div class="solar-panel">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="display-counter"></div>
+        </div>
+
+        <!-- Textos Dinâmicos -->
+        <div class="error-code">404</div>
+        <h1 class="headline">Este link está gerando zero energia.</h1>
+        <p class="subline">Que tal voltar para a nossa central?</p>
+
+        <!-- Botão Gatilho -->
+        <a href="index.html" class="btn-home">Voltar para a Central</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fótons Energia Solar - Soluções em Energia Solar | Jacareí e Vale do Paraíba</title>
+    <meta name="description" content="Fótons Energia Solar: soluções completas em energia solar e engenharia elétrica no Vale do Paraíba. Economia de até 95% na conta de luz. Orçamento grátis!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="mailto:fotons.energiasolar@gmail.com"><i class="fas fa-envelope"></i> fotons.energiasolar@gmail.com</a>
+                <span><i class="fas fa-map-marker-alt"></i> Jacareí - SP | Vale do Paraíba</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/fotons.energia" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5512992427537" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+5512992427537" aria-label="Telefone"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="Fótons Energia Solar" class="logo-img">
+                <span>Fótons <strong>Energia Solar</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="https://wa.me/5512992427537?text=Olá! Gostaria de solicitar um orçamento de energia solar." class="btn btn-primary nav-cta" target="_blank">
+                <i class="fab fa-whatsapp"></i> Orçamento Grátis
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1920&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <span class="hero-badge"><i class="fas fa-bolt"></i> Soluções Renováveis</span>
+                    <h1>Economia,<br>Independência e<br><span class="highlight">Sustentabilidade</span><br>em Um Único Projeto.</h1>
+                    <p>A Fótons Energia Solar transforma a luz do sol em economia real para sua residência, comércio ou indústria. Projetos sob medida com retorno garantido.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5512992427537?text=Olá! Gostaria de solicitar um orçamento de energia solar." class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Solicitar Orçamento Grátis
+                        </a>
+                        <a href="#problema" class="btn btn-outline btn-lg">
+                            Por Que Solar? <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Desde 2019</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vale do Paraíba</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-award"></i>
+                            <span>Engenheiros Certificados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form-wrapper">
+                    <div class="hero-form">
+                        <div class="form-urgency">
+                            <i class="fas fa-fire"></i> A energia elétrica subiu 45% acima da inflação!
+                        </div>
+                        <h3>Solicite seu Orçamento Grátis</h3>
+                        <p>Descubra quanto você pode economizar</p>
+                        <form id="heroForm">
+                            <input type="text" placeholder="Seu nome completo" required>
+                            <input type="tel" placeholder="Seu WhatsApp com DDD" required>
+                            <input type="email" placeholder="Seu e-mail">
+                            <select required>
+                                <option value="" disabled selected>Tipo de imóvel</option>
+                                <option>Residencial</option>
+                                <option>Comercial</option>
+                                <option>Industrial</option>
+                                <option>Rural / Fazenda</option>
+                                <option>Condomínio</option>
+                            </select>
+                            <input type="text" placeholder="Valor médio da conta de luz (R$)">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fab fa-whatsapp"></i> Quero Economizar Agora
+                            </button>
+                        </form>
+                        <p class="form-disclaimer"><i class="fas fa-lock"></i> Seus dados estão seguros. Sem spam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section" id="problema">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">O Problema</span>
+                <h2>O Aumento da <span class="highlight">Energia Elétrica</span><br>no Brasil</h2>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card danger">
+                    <div class="problem-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>+45%</h3>
+                    <h4>Acima da Inflação</h4>
+                    <p>Nos últimos 15 anos, a tarifa de energia elétrica subiu 45% acima da inflação, segundo a Abraceel.</p>
+                </div>
+                <div class="problem-card danger">
+                    <div class="problem-icon"><i class="fas fa-water"></i></div>
+                    <h3>Crises</h3>
+                    <h4>Hídricas e Termelétricas</h4>
+                    <p>Crises hídricas, uso de termelétricas e pouca concorrência fizeram o custo disparar, deixando consumidores sem alternativas.</p>
+                </div>
+                <div class="problem-card success">
+                    <div class="problem-icon"><i class="fas fa-arrow-down"></i></div>
+                    <h3>-71%</h3>
+                    <h4>Custo de Instalação Solar</h4>
+                    <p>Nos últimos 15 anos, o custo médio de instalação de sistemas solares no Brasil caiu 71%, tornando a tecnologia mais acessível.</p>
+                </div>
+                <div class="problem-card success">
+                    <div class="problem-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <h3>R$ 85 bi</h3>
+                    <h4>Economia Gerada</h4>
+                    <p>A geração própria de energia solar já proporcionou uma economia de cerca de R$ 85 bilhões aos consumidores brasileiros.</p>
+                </div>
+            </div>
+            <div class="problem-cta">
+                <div class="problem-cta-text">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <strong>A energia solar não é apenas o futuro — é a melhor decisão do presente.</strong>
+                        <p>O caminho mais inteligente para economizar energia.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/5511972879242?text=Olá! Quero saber como economizar com energia solar." class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Fale com um Especialista
+                </a>
+            </div>
+            <p class="source-text">Fontes: Abraceel, Portal Solar, Canal Solar.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-images">
+                    <div class="exp-img-main">
+                        <img src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=700&q=80" alt="Equipe Fótons Energia Solar">
+                    </div>
+                    <div class="exp-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="Instalação Solar Fótons">
+                    </div>
+                    <div class="exp-badge">
+                        <span class="exp-years">2019</span>
+                        <span class="exp-label">Desde</span>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2>Somos a <span class="highlight">Fótons Energia Solar</span></h2>
+                    <p>Fundada em 2019, a Fótons Energia Solar é uma empresa de engenharia elétrica especializada em projetos solares e sistemas elétricos, que oferece soluções completas com confiança e qualidade.</p>
+                    <p>Com sede em <strong>Jacareí (SP)</strong>, atuamos em todo o <strong>Vale do Paraíba</strong> e regiões próximas, atendendo residências, comércios e indústrias com foco em eficiência e economia.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Projetos sob medida para cada cliente</li>
+                        <li><i class="fas fa-check-circle"></i> Acompanhamento técnico do início ao fim</li>
+                        <li><i class="fas fa-check-circle"></i> Instalações residenciais, comerciais e industriais</li>
+                        <li><i class="fas fa-check-circle"></i> Execução completa: do projeto à manutenção</li>
+                    </ul>
+                    <a href="https://wa.me/5511972879242?text=Olá! Gostaria de conhecer mais sobre a Fótons." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Fale com um Engenheiro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission / Vision / Values -->
+    <section class="mvv-section">
+        <div class="container">
+            <div class="mvv-grid">
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Missão</h3>
+                    <p>Entregar soluções elétricas e solares que façam sentido para cada cliente, com um trabalho técnico sério e conduzido de forma clara do início ao fim.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Visão</h3>
+                    <p>Construir uma trajetória sólida no Vale do Paraíba como uma empresa confiável em projetos elétricos e sistemas solares, reconhecida pela seriedade e relacionamento próximo com seus clientes.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Valores</h3>
+                    <p>Clareza e diálogo aberto. Transparência em cada etapa. Atenção e foco no que realmente funciona. Evolução constante, porque a boa engenharia se constrói no dia a dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <span>+</span>
+                    <p>Anos de Experiência<br>da Equipe</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="25">0</h3>
+                    <span>%</span>
+                    <p>Retorno Médio<br>ao Ano</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <span>%</span>
+                    <p>Energia Limpa<br>e Sustentável</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="24">0</h3>
+                    <span>h</span>
+                    <p>Suporte<br>Emergencial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">O Que Fazemos</span>
+                <h2>Nossos <span class="highlight">Serviços</span><br>na Prática</h2>
+                <p>Soluções completas em engenharia elétrica e energia solar para todos os segmentos.</p>
+            </div>
+
+            <!-- Main Services - Solar -->
+            <div class="services-highlight">
+                <h3 class="services-category"><i class="fas fa-sun"></i> Energia Solar</h3>
+                <div class="services-grid-3">
+                    <div class="service-card featured">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=600&q=80" alt="Sistema Fotovoltaico">
+                            <span class="service-badge">Destaque</span>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon-sm"><i class="fas fa-solar-panel"></i></div>
+                            <h4>Projeto de Sistema Fotovoltaico</h4>
+                            <p>Dimensionamento e projeto completo para residências, comércios e indústrias.</p>
+                        </div>
+                    </div>
+                    <div class="service-card featured">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1611365892117-00ac6d4780ce?w=600&q=80" alt="Usina Fotovoltaica">
+                            <span class="service-badge hot">Investimento</span>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon-sm"><i class="fas fa-industry"></i></div>
+                            <h4>Usina Fotovoltaica 75kW</h4>
+                            <p>Implantação completa, do projeto inicial à operação final. Retorno de 25% ao ano.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=600&q=80" alt="Termografia">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon-sm"><i class="fas fa-temperature-high"></i></div>
+                            <h4>Termografia de Painéis</h4>
+                            <p>Análise termográfica para garantir máximo desempenho e identificar falhas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical Services Grid -->
+            <h3 class="services-category"><i class="fas fa-plug"></i> Engenharia Elétrica</h3>
+            <div class="services-compact-grid">
+                <div class="service-compact">
+                    <i class="fas fa-building"></i>
+                    <h5>Instalações Elétricas</h5>
+                    <p>Residenciais, comerciais, prediais e industriais</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h5>Projeto Padrão Concessionária</h5>
+                    <p>EDP, RGE, AES, ENEL, CPFL Paulista</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-bolt"></i>
+                    <h5>Subestação Aérea</h5>
+                    <p>Projeto até 300KVA</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-network-wired"></i>
+                    <h5>Painéis MT e BT</h5>
+                    <p>Dimensionamento de cabos e painéis</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-shield-alt"></i>
+                    <h5>SPDA</h5>
+                    <p>Proteção contra descargas atmosféricas</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-server"></i>
+                    <h5>Análise de Redes Industriais</h5>
+                    <p>Profibus, Profinet, Modbus, IEC61850</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h5>Medição Coletiva</h5>
+                    <p>Projeto completo de medição</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h5>Manobras MT e BT</h5>
+                    <p>Chaves fusíveis de média e baixa tensão</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-wind"></i>
+                    <h5>Renovação de Ar</h5>
+                    <p>Projetos de climatização e ventilação</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-file-contract"></i>
+                    <h5>Laudos e Vistorias</h5>
+                    <p>Laudos técnicos e consultoria especializada</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-balance-scale"></i>
+                    <h5>Seletividade / Proteção</h5>
+                    <p>Avaliação de ajustes de proteção</p>
+                </div>
+                <div class="service-compact">
+                    <i class="fas fa-file-alt"></i>
+                    <h5>Documentação Concessionárias</h5>
+                    <p>Assessoria completa com EDP, ENEL, CPFL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Continuous Showcase -->
+    <section class="portfolio-showcase-section" id="portfolio">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Serviços Executados</span>
+                <h2>Nossos <span class="highlight">Projetos Realizados</span></h2>
+                <p>Confira alguns dos serviços e instalações entregues pela Fótons Energia Solar em todo o Vale do Paraíba.</p>
+            </div>
+        </div>
+
+        <!-- Continuous Looping Gallery (Right to Left) -->
+        <div class="portfolio-ticker-wrap">
+            <div class="portfolio-ticker">
+                
+                <!-- Slide 1 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=800&q=80" alt="Instalação Solar Residencial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Residencial</span>
+                        <h4>Sistema Fotovoltaico 8,5 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Jacareí - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80" alt="Instalação Comercial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Comercial</span>
+                        <h4>Sistema Comercial 32 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> São José dos Campos - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1611365892117-00ac6d4780ce?w=800&q=80" alt="Usina Fotovoltaica 75kW">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Industrial</span>
+                        <h4>Usina Fotovoltaica 75 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Caçapava - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" alt="Instalação em Telhado">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Residencial</span>
+                        <h4>Sistema Residencial 5,4 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Taubaté - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&q=80" alt="Projeto Solar Rural">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Rural</span>
+                        <h4>Sistema Solar Rural 18 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Pindamonhangaba - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=800&q=80" alt="Engenharia Elétrica e Painéis">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Engenharia</span>
+                        <h4>Instalações e Painéis MT/BT</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Jacareí - SP</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="portfolio-slide-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" alt="Projeto Industrial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Industrial</span>
+                        <h4>Subestação e Proteção SPDA</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Lorena - SP</p>
+                    </div>
+                </div>
+
+                <!-- Duplicate for Smooth Seamless Infinite Loop -->
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=800&q=80" alt="Instalação Solar Residencial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Residencial</span>
+                        <h4>Sistema Fotovoltaico 8,5 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Jacareí - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80" alt="Instalação Comercial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Comercial</span>
+                        <h4>Sistema Comercial 32 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> São José dos Campos - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1611365892117-00ac6d4780ce?w=800&q=80" alt="Usina Fotovoltaica 75kW">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Industrial</span>
+                        <h4>Usina Fotovoltaica 75 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Caçapava - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" alt="Instalação em Telhado">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Residencial</span>
+                        <h4>Sistema Residencial 5,4 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Taubaté - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&q=80" alt="Projeto Solar Rural">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Rural</span>
+                        <h4>Sistema Solar Rural 18 kWp</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Pindamonhangaba - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=800&q=80" alt="Engenharia Elétrica e Painéis">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Engenharia</span>
+                        <h4>Instalações e Painéis MT/BT</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Jacareí - SP</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide-card" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" alt="Projeto Industrial">
+                    <div class="portfolio-slide-caption">
+                        <span class="slide-tag">Industrial</span>
+                        <h4>Subestação e Proteção SPDA</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Lorena - SP</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 36px; text-align: center;">
+            <a href="https://wa.me/5512992427537?text=Olá! Vi as fotos dos projetos e quero solicitar um orçamento." class="btn btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento Para Meu Imóvel
+            </a>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span><i class="fas fa-sun"></i> ENERGIA SOLAR</span>
+                <span><i class="fas fa-star"></i> FOTOVOLTAICO</span>
+                <span><i class="fas fa-star"></i> ECONOMIA</span>
+                <span><i class="fas fa-star"></i> SUSTENTÁVEL</span>
+                <span><i class="fas fa-star"></i> VALE DO PARAÍBA</span>
+                <span><i class="fas fa-sun"></i> ENERGIA SOLAR</span>
+                <span><i class="fas fa-star"></i> FOTOVOLTAICO</span>
+                <span><i class="fas fa-star"></i> ECONOMIA</span>
+                <span><i class="fas fa-star"></i> SUSTENTÁVEL</span>
+                <span><i class="fas fa-star"></i> VALE DO PARAÍBA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Usina 75kW Section -->
+    <section class="usina-section" id="usina">
+        <div class="container">
+            <div class="section-header center light">
+                <span class="section-tag light">Investimento</span>
+                <h2>Usina Fotovoltaica <span class="highlight">75kW</span></h2>
+                <p style="color: rgba(255,255,255,0.75);">Uma solução inovadora que produz energia limpa e acessível, com tecnologia avançada e alta confiabilidade.</p>
+            </div>
+
+            <div class="usina-investment">
+                <div class="invest-card">
+                    <span class="invest-label">Investimento</span>
+                    <h3>R$ 235 mil <span>a R$ 250 mil</span></h3>
+                    <p>Retorno médio de <strong>25% ao ano</strong>, unindo rentabilidade e energia limpa.</p>
+                    <a href="https://wa.me/5512992427537?text=Olá! Tenho interesse na Usina Fotovoltaica 75kW." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Quero Saber Mais
+                    </a>
+                </div>
+            </div>
+
+            <div class="usina-phases">
+                <div class="phase-card">
+                    <div class="phase-number">01</div>
+                    <div class="phase-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h4>Planejamento e Viabilidade</h4>
+                    <p>Análise técnica e financeira, definição do escopo e elaboração do projeto elétrico para homologação junto à EDP.</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">02</div>
+                    <div class="phase-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h4>Construção e Montagem</h4>
+                    <p>Execução da infraestrutura, instalação dos painéis solares, inversores e sistemas de proteção com acompanhamento da engenharia.</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-number">03</div>
+                    <div class="phase-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h4>Operação e Monitoramento</h4>
+                    <p>Sistema em funcionamento com monitoramento em tempo real. Manutenções preventivas asseguram máximo desempenho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Mais Energia, Menos Impacto</span>
+                <h2>Benefícios da <span class="highlight">Usina Fotovoltaica</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h5>Redução de custos com energia elétrica</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h5>Retorno médio de 25% ao ano</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-tools"></i>
+                    <h5>Manutenção simples, durabilidade +25 anos</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <h5>Estabilidade nos gastos com energia</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <h5>Energia 100% renovável</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h5>Gere créditos de energia excedente</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <h5>Reduz emissões de gases poluentes</h5>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-unlink"></i>
+                    <h5>Menor dependência das concessionárias</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients / Who we serve -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Público</span>
+                <h2>Quem Buscamos <span class="highlight">Atender</span></h2>
+            </div>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <i class="fas fa-home"></i>
+                    <h4>Residências</h4>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-store"></i>
+                    <h4>Empresas e Comércios</h4>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-industry"></i>
+                    <h4>Indústrias</h4>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-tractor"></i>
+                    <h4>Propriedades Rurais</h4>
+                </div>
+                <div class="client-card">
+                    <i class="fas fa-building"></i>
+                    <h4>Condomínios</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="equipe">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Equipe Executiva</span>
+                <h2>Conheça Nossos <span class="highlight">Engenheiros</span></h2>
+                <p>Atendimento direto com os engenheiros responsáveis.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Julio Flávio Pizarro">
+                        <div class="team-social">
+                            <a href="https://wa.me/5512992427537?text=Olá Julio! Gostaria de tirar dúvidas sobre energia solar." target="_blank" aria-label="WhatsApp Julio"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Julio Flávio Pizarro</h4>
+                        <span class="team-role">CEO</span>
+                        <p>Engenheiro eletricista com mais de 5 anos de experiência em projetos e fiscalização de sistemas de distribuição de energia.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Rêmulo David Dias">
+                        <div class="team-social">
+                            <a href="https://wa.me/5512992427537?text=Olá Rêmulo! Gostaria de conversar sobre projetos de engenharia elétrica." target="_blank" aria-label="WhatsApp Rêmulo"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Rêmulo David Dias</h4>
+                        <span class="team-role">COO</span>
+                        <p>Engenheiro eletricista com mais de 15 anos de experiência e atuação na <strong>Siemens Energy</strong>, em projetos de sistemas de controle e proteção (PDS).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header center light">
+                <span class="section-tag light">Diferenciais</span>
+                <h2>Por Que Contratar a<br><span class="highlight">Fótons Energia Solar?</span></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Atendimento Direto com Engenheiros</h4>
+                    <p>Sem intermediários. Fale direto com quem projeta e executa.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Execução Completa</h4>
+                    <p>Do início do projeto à manutenção, tudo em um só lugar.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-microchip"></i>
+                    <h4>Tecnologia de Alta Eficiência</h4>
+                    <p>Painéis e inversores de última geração para máximo rendimento.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Seguro Bradesco</h4>
+                    <p>Investimento protegido contra sinistros e intempéries.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Presença no Vale do Paraíba</h4>
+                    <p>Sede em Jacareí, com atendimento regional sólido.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Suporte 24h</h4>
+                    <p>Equipe disponível para suporte emergencial a qualquer hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Hire / Steps -->
+    <section class="steps-section" id="como-contratar">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Simples e Rápido</span>
+                <h2>Como <span class="highlight">Contratar</span></h2>
+            </div>
+            <div class="steps-grid-4">
+                <div class="step-card-light">
+                    <div class="step-number-light">01</div>
+                    <div class="step-icon-light"><i class="fab fa-whatsapp"></i></div>
+                    <h4>Fale com Nosso Time</h4>
+                    <p>Entre em contato pelo WhatsApp e converse diretamente com nossos engenheiros.</p>
+                </div>
+                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+                <div class="step-card-light">
+                    <div class="step-number-light">02</div>
+                    <div class="step-icon-light"><i class="fas fa-calendar-check"></i></div>
+                    <h4>Agende uma Visita Técnica</h4>
+                    <p>Nossa equipe vai até você para avaliar o local e entender sua necessidade.</p>
+                </div>
+                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+                <div class="step-card-light">
+                    <div class="step-number-light">03</div>
+                    <div class="step-icon-light"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h4>Receba seu Orçamento</h4>
+                    <p>Orçamento personalizado com a melhor solução para seu perfil.</p>
+                </div>
+                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
+                <div class="step-card-light">
+                    <div class="step-number-light">04</div>
+                    <div class="step-icon-light"><i class="fas fa-rocket"></i></div>
+                    <h4>Início do Projeto</h4>
+                    <p>Projeto com acompanhamento completo do início à entrega final.</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://wa.me/5512992427537?text=Olá! Gostaria de agendar uma visita técnica gratuita." class="btn btn-primary btn-lg" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Agendar Visita Técnica Gratuita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee 2 -->
+    <div class="marquee-section reverse">
+        <div class="marquee">
+            <div class="marquee-content reverse">
+                <span><i class="fas fa-sun"></i> FÓTONS</span>
+                <span><i class="fas fa-star"></i> ENERGIA SOLAR</span>
+                <span><i class="fas fa-star"></i> JACAREÍ</span>
+                <span><i class="fas fa-star"></i> VALE DO PARAÍBA</span>
+                <span><i class="fas fa-sun"></i> FÓTONS</span>
+                <span><i class="fas fa-star"></i> ENERGIA SOLAR</span>
+                <span><i class="fas fa-star"></i> JACAREÍ</span>
+                <span><i class="fas fa-star"></i> VALE DO PARAÍBA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="cta-section" id="contato">
+        <div class="container">
+            <div class="cta-content">
+                <i class="fas fa-sun cta-icon"></i>
+                <h2>Cada Raio de Sol é Uma<br>Oportunidade de Construir<br>Um <span class="highlight">Futuro Mais Limpo</span></h2>
+                <p>Solicite seu orçamento gratuito e descubra quanto você pode economizar com energia solar.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5512992427537?text=Olá! Gostaria de solicitar um orçamento de energia solar." class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Falar pelo WhatsApp
+                    </a>
+                    <a href="tel:+5512992427537" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i> (12) 99242-7537
+                    </a>
+                </div>
+                <div class="cta-contacts">
+                    <a href="mailto:fotons.energiasolar@gmail.com"><i class="fas fa-envelope"></i> fotons.energiasolar@gmail.com</a>
+                    <a href="https://www.instagram.com/fotons.energia" target="_blank"><i class="fab fa-instagram"></i> @fotons.energia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">
+                        <img src="logo.jpg" alt="Fótons Energia Solar" class="logo-img">
+                        <span>Fótons <strong>Energia Solar</strong></span>
+                    </a>
+                    <p>Empresa de engenharia elétrica especializada em projetos solares e sistemas elétricos. Soluções completas com confiança e qualidade desde 2019.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/fotons.energia" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5512992427537" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nossos Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Energia Solar Residencial</a></li>
+                        <li><a href="#servicos">Energia Solar Comercial</a></li>
+                        <li><a href="#servicos">Usina Fotovoltaica 75kW</a></li>
+                        <li><a href="#servicos">Instalações Elétricas</a></li>
+                        <li><a href="#servicos">Laudos e Vistorias</a></li>
+                        <li><a href="#servicos">Projetos de Subestação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Jacareí - SP<br>Vale do Paraíba e Região</li>
+                        <li><i class="fab fa-whatsapp"></i> (12) 99242-7537</li>
+                        <li><i class="fas fa-envelope"></i> fotons.energiasolar@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i> @fotons.energia</li>
+                    </ul>
+                    <p class="cnpj-text">CNPJ: 33.674.344/0001-35</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2025 Fótons Energia Solar. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>Jacareí - SP | Vale do Paraíba</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5512992427537?text=Olá! Gostaria de solicitar um orçamento de energia solar." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale Conosco</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
